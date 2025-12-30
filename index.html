@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marriage Biodata – Jayanti Das</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f8e1f4, #e0f7fa);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: #ffffff;
+      max-width: 900px;
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .header {
+      background: linear-gradient(135deg, #ec407a, #ab47bc);
+      color: #fff;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    .header p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 25px;
+      gap: 25px;
+    }
+
+    .photo-section {
+      flex: 1 1 220px;
+      text-align: center;
+    }
+
+    .photo-section img {
+      width: 200px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 15px;
+      border: 4px solid #ec407a;
+      animation: zoomIn 1.2s ease;
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .details {
+      flex: 2 1 400px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .section {
+      background: #fafafa;
+      padding: 15px 18px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .section:hover {
+      transform: translateY(-4px);
+    }
+
+    .section h3 {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      color: #ab47bc;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    .row {
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+    }
+
+    .row span {
+      font-weight: 500;
+      color: #333;
+    }
+
+    .footer {
+      background: #f5f5f5;
+      padding: 15px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 1.6rem;
+      }
+
+      .photo-section img {
+        width: 160px;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="header">
+      <h1>Jayanti Das</h1>
+      <p>Marriage Biodata</p>
+    </div>
+
+    <div class="content">
+      <div class="photo-section">
+        <!-- Replace photo.jpg with actual profile photo -->
+        <img src="photo.jpg" alt="Profile Photo" />
+      </div>
+
+      <div class="details">
+        <div class="section">
+          <h3>Personal Details</h3>
+          <div class="row"><span>Date of Birth:</span> 28 May, 2000</div>
+          <div class="row"><span>Place of Birth:</span> Cuttack, Odisha</div>
+          <div class="row"><span>Height:</span> 5 feet (152 cm)</div>
+          <div class="row"><span>Marital Status:</span> Single</div>
+          <div class="row"><span>Education:</span> MBA</div>
+          <div class="row"><span>Religion:</span> Hindu</div>
+          <div class="row"><span>Mother Tongue:</span> Odia</div>
+          <div class="row"><span>Caste:</span> Khandayat</div>
+          <div class="row"><span>Rashi:</span> Meena (Pisces)</div>
+          <div class="row"><span>Gotra:</span> Bharadwaja</div>
+        </div>
+
+        <div class="section">
+          <h3>Family Details</h3>
+          <div class="row"><span>Father:</span> Samir Kumar Das</div>
+          <div class="row"><span>Occupation:</span> State Govt. Employee (Tahasil)</div>
+          <div class="row"><span>Mother:</span> Jyotsnarani Das</div>
+          <div class="row"><span>Occupation:</span> Housewife</div>
+          <div class="row"><span>Siblings:</span> 1 Brother</div>
+        </div>
+
+        <div class="section">
+          <h3>Contact Details</h3>
+          <div class="row"><span>Address:</span> Tampada, Madhab, Niali, Cuttack, Odisha – 754004</div>
+          <div class="row"><span>Mobile:</span> +91 88956 02569</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      © 2025 | Marriage Biodata – Jayanti Das
+    </div>
+  </div>
+
+  <script>
+    // Simple entrance animation on load
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelector('.card').style.transform = 'scale(1)';
+    });
+  </script>
+
+</body>
+</html>
